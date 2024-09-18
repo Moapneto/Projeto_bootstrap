@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-image: url(./imagens/fundo.jpg);
+    background-size: cover;
+}
+
+/*body img {
+    height: 610px;
+}*/
+
+.container {
+    padding: 20px;
+    margin-top: 50px;
+    display: block;
+    align-items: center;
+    max-width: 600px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+#form input {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+form button {
+    margin-top: 15px;
+    
+}
