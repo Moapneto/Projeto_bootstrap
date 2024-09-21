@@ -39,10 +39,18 @@ textarea {
 #form input {
     font-size: 15px;
     padding: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 form button {
     margin-top: 15px;
     
+}
+
+.error{
+    display: block;
+    color: red;
+    font-size: 16px;
+    margin-bottom: 10px;
+
 }

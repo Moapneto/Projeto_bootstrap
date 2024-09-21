@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('#telefone').mask('(00) 00000-0000');
+    $('#telefone').mask('(00) 0 0000-0000');
 
     $('form').validate({
         rules:{
@@ -28,13 +28,14 @@ $(document).ready(function(){
 
         submitHandler: function(form) {
             alert("Sua requisição foi enviada para análise. Cadastro completo.");
-            $(form).trigger('reset');
+            form.reset();
+
         },
 
-        invalidHandler:function(evento, validador) {
-            let camposIncompletos = validador.numberOfInvalids();
-            if(camposIncompletos){
-                alert(`Existem ${camposIncompletos} campos incorretos.`)
+        invalidHandler: function(evento, validador) {
+            let campoInvalido = validador.numberOfInvalids();
+            if(campoInvalido){
+                alert(`existem ${campoInvalido} campos incorretos`)
             }
         }
     })

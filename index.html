@@ -14,18 +14,19 @@
                 <h2>Formulário de cadastro</h2>
                 <form id="form">
                     <label class="form-label" for="nome">Seu nome:</label>
-                    <input class="form-control" type="text" id="nome" placeholder="Ex: Moacyr Pinto neto">
+                    <input class="form-control" type="text" id="nome" name="nome" placeholder="Ex: Moacyr Pinto neto">
                     <label class="form-label" for="email">Seu email:</label>
-                    <input class="form-control" type="email" id="email" placeholder="Ex: email@email.com">
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Ex: email@email.com">
                     <label class="form-label" for="telefone">Seu telefone:</label>
-                    <input class="form-control" type="tel" id="telefone" placeholder="Ex: (00)0000-0000">
-                    <label class="form-label" for="mensagem">Informe sua mensagem</label>
+                    <input class="form-control" type="tel" id="telefone" name="telefone" placeholder="Ex: (00)0000-0000">
+                    <label class="form-label" for="mensagem">Informe sua mensagem:</label>
                     <textarea class="form-control" id="mensagem" required></textarea>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="aceito-termo">
                         <label class="form-check-label" for="aceitoTermos">Li e concordo com os termos do site</label>
+                        <input class="form-check-input" type="checkbox" name="aceitoTermos" id="aceito-termo">
+                        
                     </div>
-                    <button class="btn btn-success">Enviar</button>
+                    <button class="btn btn-success" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
