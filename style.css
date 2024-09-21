@@ -46,3 +46,10 @@ form button {
     margin-top: 15px;
     
 }
+
+.error{
+    display: block;
+    color: red;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
